@@ -9,9 +9,9 @@
 
   AVBuffer = require('../../core/buffer');
 
-  http = require('http');
+  http = require('follow-redirects').http;
 
-  https = require('https');
+  https = require('follow-redirects').https;
 
   HTTPSource = (function(superClass) {
     extend(HTTPSource, superClass);
